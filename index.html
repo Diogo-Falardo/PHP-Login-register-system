@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dougo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/lrr-autentication.js"></script>
+  </head>
+  <body>
+    <div class="login-register-recovery main allmenus" id="primary-menu">
+      <div class="head-menu">
+        <p>Dougo</p>
+      </div>
+      <div class="mid-menu" id="mid-menu">
+        <button onclick="login_menu()">
+          Login <span>></span><span id="first-span">></span>
+        </button>
+        <button onclick="register_menu()">
+          Register <span>></span><span id="first-span">></span>
+        </button>
+        <button onclick="recovery_menu()">
+          Recover Password<span>></span><span id="first-span">></span>
+        </button>
+      </div>
+      <div class="login-menu" id="login-menu">
+        <form id="login-form" action="php/login.php" method="post">
+          <input placeholder="username" id="username-log" name="username-log" type="text"/>
+          <input placeholder="password" id="password-log" type="password" name="password-log"/>
+          <button type="submit">JOIN</button>
+        </form>
+      </div>
+      <div class="register-menu" id="register-menu">
+        <form id="register-form" action="php/register.php" method="post">
+          <input placeholder="username" id="username" name="username" type="text" />
+          <input
+            placeholder="password"
+            id="password"
+            type="password"
+            name="password"
+          />
+          <span class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+          <input placeholder="email" id="email" name="email"/>
+          <button type="submit">CREATE</button>
+        </form>
+      </div>
+      <div class="recovery-menu" id="recovery-menu">
+        <form id="recovery-form" action="php/recover.php" method="post">
+          <input placeholder="email" id="email-rec" name="email-rec" />
+          <button type="submit">SEND EMAIL</button>
+        </form>
+      </div>
+      <div class="bottom-menu">
+        <p id="rights-reserved">&copy all rights reserved &#8594 Dougo</p>
+        <button class="btn-arrow" id="btn-arrow" onclick="go_back()">
+          Go Back
+        </button>
+      </div>
+
+      <!--Error Message-->
+      <div id="error"></div>
+    </div>
+
+    <div id="bg"></div>
+    <!--JS-->
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/index-menu.js"></script>
+  </body>
+</html>

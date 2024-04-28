@@ -1,0 +1,230 @@
+#bg{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    z-index: -1;
+
+}
+
+body{
+    background-color: #212121;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.main{
+    border: 2px solid #ffffff;
+    width: 250px;
+    z-index: 0;
+}
+
+
+
+
+.head-menu{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    height: 25px;
+    border-bottom: 2px solid #ffffff;
+    height: 100%; 
+}
+
+.head-menu p{
+    background-color: #b1b1b115;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    font-weight: 900;
+    color: #212121;
+    text-shadow: 0px 0px 4px #ffffff;
+    text-transform: capitalize;
+    
+}
+
+
+.mid-menu{
+    width: 100%;
+    align-items: center;
+    /* display: none; */
+}
+
+.login-menu, .register-menu , .recovery-menu{
+    width: 100%;
+    align-items: center;
+    display:none;
+}
+
+.mid-menu button , .allmenus button{
+    font-size: 15px;
+    width: 100%;
+    height: 25px;
+    display: block;
+    background-color: transparent;
+    border:none;
+    text-align: left;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+
+}
+
+.login-menu button, .register-menu button , .recovery-menu button{
+    text-align: center;
+}
+
+.mid-menu button:last-child ,.allmenus button:last-child{
+    color: #ff3700;
+    text-shadow: 1px 1px 1px #2c0101;
+}
+
+.mid-menu button:last-child:hover ,.allmenus button:hover{
+    background-color: #2c0101;
+}
+
+
+.mid-menu button:hover{
+    background-color:#9B4A4A ;
+}
+
+.mid-menu span{
+    padding-left: 0.35rem;
+    float: right;
+    color: #b1b1b1;
+}
+
+#first-span{
+    color: #9B4A4A;
+}
+
+.allmenus input{
+    width: 97%;
+    font-size: 15px;
+    margin-left: 0.1rem;
+    text-align: left;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #b1b1b1;
+    font-style: bolder;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #9B4A4A;
+}
+
+
+
+.bottom-menu{
+    border-top: 2px solid #b1b1b1;
+    padding: 0px;
+    font-size: 15px;
+    text-align: center;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-menu button{
+    align-items: center;
+    display: none;
+    width: 50%;
+    margin: 0.45rem;
+    font-size: 15px;
+    font-weight: 700;
+    font: bold;
+    background-color: transparent;
+    border: 2px double #b1b1b1;
+    border-radius: 15px;
+    text-shadow: 1px 1px 1px #2c0101;
+    color: #b1b1b1;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px #2c0101;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bottom-menu button:hover{
+    background-color: #2c0101;
+}
+
+#error{
+    /* border-top: 2px solid #b1b1b1; */
+    width: 100%;
+    margin: 0;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 10px;
+    color: #ff3700;
+    text-shadow: 1px 1px 1px #2c0101;
+    
+}
+
+/*ERROR PAGE*/
+
+.error-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    border: solid 3px #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #212121;
+}
+.error-msg h1{
+    width: 100%;
+    margin: 0;
+    border-bottom: solid 1px #ffffff;
+    padding-bottom: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.error-msg h3{
+    width: 100%;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff3700;
+    text-shadow: 1px 1px 1px #2c0101;
+    text-transform: capitalize;
+}
+
+.error-msg button {
+    /* Remove margin-left and margin-right */
+    width: 15rem;
+    font-size: 15px;
+    font-weight: 700;
+    font: bold; /* Consider removing this line, it's not a valid CSS property */
+    background-color: transparent;
+    border: 2px double #b1b1b1;
+    border-radius: 15px;
+    text-shadow: 1px 1px 1px #2c0101;
+    color: #b1b1b1;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px #2c0101;
+    cursor: pointer;
+    padding: 0.5rem;
+}  
+.error-msg button:hover{
+    background-color: #2c0101;
+}
+
+/* PORFOLIO PAGE */
